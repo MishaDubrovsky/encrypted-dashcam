@@ -1,0 +1,13 @@
+[Unit]
+Description=Records my driving
+
+[Service]
+User=dashcam
+Group=dashcam
+WorkingDirectory=/home/dashcam
+ExecStart=/home/dashcam/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
